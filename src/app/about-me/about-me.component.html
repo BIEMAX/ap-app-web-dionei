@@ -1,1 +1,39 @@
-<p>about-me works!</p>
+<div class="mainDiv">
+<mat-card class="example-card">
+    <div *ngFor="let info of listInfoAbout">
+
+        <mat-card-header>
+            
+            <div mat-card-avatar class="custom-header-image"></div>
+
+            <!-- <div mat-card-avatar class="custom-avatar">
+                <img mat-card-image src="/assets/img/me.png">
+            </div> -->
+
+            <mat-card-title>{{info.title}}</mat-card-title>
+            <mat-card-subtitle>{{info.subTitle}}</mat-card-subtitle>
+
+        </mat-card-header>
+        
+        <div *ngIf="info.hasImage">
+            <img mat-card-image src="{{info.imageSrc}}" alt="Photo of a Shiba Inu">
+        </div>
+
+        <mat-card-content>
+            <span style="white-space: pre" >
+                {{info.description}}
+            </span>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <div *ngIf="info.hasLikeButton">
+                <button mat-button>Curtir</button>
+            </div>
+            <div *ngIf="info.hasShareButton">
+                <button mat-button>Compartilhar</button>
+            </div>
+        </mat-card-actions>
+
+    </div>
+  </mat-card>
+</div>

@@ -1,0 +1,16 @@
+.example-card {
+    max-width: 400px;
+    text-align: center;
+}
+  
+.custom-header-image {
+    background-image: url('https://media-exp1.licdn.com/dms/image/C4E03AQHNrvo7buReoQ/profile-displayphoto-shrink_800_800/0/1628681073467?e=1665014400&v=beta&t=enOf2MnXr2wejHDl9UqXM3WY2x3mWqY6lv-uj0tHMHk');
+    background-size: cover;
+}
+
+mat-card {
+    max-width: 400px;
+    margin: 2em auto;
+    margin-top: 2em auto;
+    text-align: center;
+}
