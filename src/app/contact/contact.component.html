@@ -1,1 +1,22 @@
-<p>contact works!</p>
+<mat-card class="example-card">
+    <div *ngFor="let social of listSocialMedia">
+
+        <mat-card class="example-card">
+
+            <div mat-card-avatar class="custom-header-image" style="background-image: url('{{social.imageSrc}}')"></div>
+
+            <mat-card-title>{{social.title}}</mat-card-title>
+            <mat-card-subtitle>{{social.subTitle}}</mat-card-subtitle>
+
+            <mat-card-actions>
+                <div *ngIf="social.hasLikeButton">
+                    <button mat-button>Curtir</button>
+                </div>
+                <div *ngIf="social.hasShareButton">
+                    <button mat-button>Compartilhar</button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+</mat-card>

@@ -56,7 +56,7 @@ export class SchoolComponent implements OnInit {
         "2012 - 2014",
         "Manutenção, calibração, desenvolvimento de layouts elétricos e eletrônicos, soldagem de componentes, automação industrial, desenvolvimento de aplicações, linguagem de programação."
       )
-    ]
+    ];
   }
 
 }
