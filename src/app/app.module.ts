@@ -39,7 +39,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SchoolComponent } from './school/school.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { ContactComponent } from './contact/contact.component';
-import { HomeComponent } from './home/home.component'
 
 @NgModule({
   declarations: [
@@ -48,8 +47,7 @@ import { HomeComponent } from './home/home.component'
     AboutMeComponent,
     SchoolComponent,
     CurriculumComponent,
-    ContactComponent,
-    HomeComponent
+    ContactComponent
   ],
   imports: [
     FormsModule,

@@ -1,12 +1,12 @@
-<!--header-->
-<mat-toolbar>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>Menu</mat-icon>
+<mat-toolbar class="toolbar-home">
+  <button mat-button [matMenuTriggerFor]="menu" mat-icon-button>
+    <mat-icon style="color:white;">Menu</mat-icon>
   </button>
-  <mat-menu #menu>
+  <mat-menu #menu="matMenu">
     <a mat-menu-item routerLink="/about">Sobre mim</a>
     <a mat-menu-item routerLink="/school">Formação</a>
     <a mat-menu-item routerLink="/curriculum">Portfólio</a>
     <a mat-menu-item routerLink="/contact">Contato</a>
   </mat-menu>
 </mat-toolbar>
+<router-outlet></router-outlet>
