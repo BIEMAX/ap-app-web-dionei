@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProfileDioneiComponent } from './profile-dionei/profile-dionei.component';
 
 import { CdkTableModule } from '@angular/cdk/table';
 import { CdkTreeModule } from '@angular/cdk/tree';
@@ -43,7 +42,6 @@ import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileDioneiComponent,
     AboutMeComponent,
     SchoolComponent,
     CurriculumComponent,
