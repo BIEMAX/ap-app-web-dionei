@@ -1,1 +1,23 @@
-<p>school works!</p>
+<mat-card class="example-card">
+    <div *ngFor="let education of listAcademicEducation">
+
+        <mat-card class="example-card">
+            <mat-card-title>{{education.title}}</mat-card-title>
+            <mat-card-subtitle>{{education.subTitle}}</mat-card-subtitle>
+            <mat-card-content>
+              <p>{{education.firstContent}}</p>
+              <p>{{education.secondContent}}</p>
+            </mat-card-content>
+
+            <mat-card-actions>
+                <div *ngIf="education.hasLikeButton">
+                    <button mat-button>Curtir</button>
+                </div>
+                <div *ngIf="education.hasShareButton">
+                    <button mat-button>Compartilhar</button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+</mat-card>
