@@ -1,1 +1,23 @@
-<p>curriculum works!</p>
+<mat-card class="example-card">
+    <div *ngFor="let experience of listExperiences">
+
+        <mat-card class="example-card">
+            <mat-card-title>{{experience.title}}</mat-card-title>
+            <mat-card-subtitle>{{experience.subTitle}}</mat-card-subtitle>
+            <mat-card-content>
+              <p>{{experience.firstContent}}</p>
+              <p>{{experience.secondContent}}</p>
+            </mat-card-content>
+
+            <mat-card-actions>
+                <div *ngIf="experience.hasLikeButton">
+                    <button mat-button>Curtir</button>
+                </div>
+                <div *ngIf="experience.hasShareButton">
+                    <button mat-button>Compartilhar</button>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+</mat-card>
