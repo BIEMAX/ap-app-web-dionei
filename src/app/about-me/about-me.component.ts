@@ -39,6 +39,33 @@ export class AboutMeComponent implements OnInit {
         `,
         false, false
       ),
+      new AboutModels(
+        'Hobies', '', false, '',
+        `Dentre alguns dos meus hobies, estão:
+          -Academia
+          -Jogar futebol
+          -Andar de bike (manobras radicais)
+          -Jogar no PS4
+          -Jogar no PC
+          -Ler livros
+          -Ser dono de casa
+          -Cozinhar
+          -Assistir séries
+          -Viajar
+        `,
+        false, false
+      ),
+      new AboutModels(
+        'Sonhos e metas', '', false, '',
+        `
+        Um dos meus maiores sonhos é poder ir 
+        morar fora do país, desde pequeno.
+        Sonho em um dia poder dar aulas em 
+        faculdades, pois a minha meta é me 
+        formar doutor em tecnologia da informação.
+        `,
+        false, false
+      ),
     ]
   }
 
