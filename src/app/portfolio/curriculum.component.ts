@@ -17,10 +17,8 @@ export class CurriculumComponent implements OnInit {
   }
 
   createExperiences() {
-    // this.listExperiences = [
-    //   new ExperienceModels(""),
-    //   new ExperienceModels("")
-    // ]
+    this.listExperiences = [
+      new ExperienceModels("Oh, desculpe", "Parece que ainda não tenho websites desenvolvidos", "", ""),
+    ];
   }
-
 }
